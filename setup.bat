@@ -1,0 +1,11 @@
+pip install colorama
+pip install termcolor
+pip install urllib3
+pip install certifi
+pip install art
+pip install pyautogui
+pip install keyboard
+pip install pywin32
+pip install pypiwin32
+pip install pillow
+pip install threading
