@@ -58,13 +58,15 @@ def checkNames(startingIndex, endingIndex):
                 if r_data:
                     if(keyboard.is_pressed('q')):
                         print(line)
-                    totalIndex += 1
                     None
                 else:
                     f3.write(line)
                     print(colorama.Fore.GREEN +"Username: " + colorama.Style.RESET_ALL + line + colorama.Fore.GREEN + " = Available" + colorama.Style.RESET_ALL)
                 if(startingIndex is endingIndex):
+                    print("UwU")
                     break
+                
+                totalIndex += 1
 threadRange = int(input("How many GIGA thread you want yo? "))
 for iIi in range(threadRange):
     thingy = int(50653/threadRange*(iIi))
