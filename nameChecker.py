@@ -60,16 +60,20 @@ def checkNames(startingIndex, endingIndex):
                         print(line)
                     None
                 else:
-                    f3.write(line)
+                    workingNames = open('3names.txt', 'w')
+                    workingNames.write(line)
+                    workingNames.close()
                     print(colorama.Fore.GREEN +"Username: " + colorama.Style.RESET_ALL + line + colorama.Fore.GREEN + " = Available" + colorama.Style.RESET_ALL)
+                
                 if(startingIndex is endingIndex):
                     print("UwU")
                     break
                 
                 totalIndex += 1
-threadRange = int(input("How many GIGA thread you want yo? "))
-for iIi in range(threadRange):
-    thingy = int(50653/threadRange*(iIi))
-    thingy2 = int(50653/threadRange*(iIi+1))
-    
-    threading.Thread(target=checkNames, args=[thingy, thingy2]).start()
+#threadRange = int(input("How many GIGA thread you want yo? "))
+#for iIi in range(threadRange):
+#    thingy = int(50653/threadRange*(iIi))
+#    thingy2 = int(50653/threadRange*(iIi+1))
+#    
+#    threading.Thread(target=checkNames, args=[thingy, thingy2]).start()
+checkNames(1, 50653)
